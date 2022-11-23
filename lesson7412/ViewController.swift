@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var randomJoke = Joke(setup: "", punchline: "")
+    private var controller: JokeController!
     
     private lazy var setupLabel: UILabel = {
         let label = UILabel()
@@ -30,16 +30,29 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .cyan
+       
+//        NetworkManager().getJokes { result in
+//            //self.randomJoke = result[0]
+//
+//            self.setupLabel.text = result[randomDigit].setup
+//            self.punchlineLabel.text = result[randomDigit].punchline
+//        }
         
-        NetworkManager().getJokes { result in
-            //self.randomJoke = result[0]
- 
-            let randomDigit = Int.random(in: 0...9)
-            self.setupLabel.text = result[randomDigit].setup
-            self.punchlineLabel.text = result[randomDigit].punchline
-        }
-
+        self.controller = JokeController(view: self)
+        
+        controller.updateJokes()
+        
         setupSubviews()
+    }
+    
+    func updateLabels() {
+        DispatchQueue.main.async {
+            let randomDigit = Int.random(in: 0...9)
+            
+            let jokes = self.controller.getJokes()
+            self.setupLabel.text = jokes[randomDigit].setup
+            self.punchlineLabel.text = jokes[randomDigit].punchline
+        }
     }
 
     func setupSubviews() {

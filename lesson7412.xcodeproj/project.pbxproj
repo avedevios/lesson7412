@@ -15,6 +15,7 @@
 		6D3926A4292E6515006EB66D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D3926A2292E6515006EB66D /* LaunchScreen.storyboard */; };
 		6D3926AC292E657C006EB66D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3926AB292E657C006EB66D /* NetworkManager.swift */; };
 		6D3926AE292E65D7006EB66D /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3926AD292E65D7006EB66D /* JokeModel.swift */; };
+		6D3926B0292E6B60006EB66D /* JokeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3926AF292E6B60006EB66D /* JokeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6D3926A5292E6515006EB66D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D3926AB292E657C006EB66D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		6D3926AD292E65D7006EB66D /* JokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
+		6D3926AF292E6B60006EB66D /* JokeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				6D3926AD292E65D7006EB66D /* JokeModel.swift */,
+				6D3926AF292E6B60006EB66D /* JokeController.swift */,
 				6D392697292E6511006EB66D /* AppDelegate.swift */,
 				6D392699292E6511006EB66D /* SceneDelegate.swift */,
 				6D39269B292E6511006EB66D /* ViewController.swift */,
@@ -148,6 +151,7 @@
 				6D39269C292E6511006EB66D /* ViewController.swift in Sources */,
 				6D3926AE292E65D7006EB66D /* JokeModel.swift in Sources */,
 				6D392698292E6511006EB66D /* AppDelegate.swift in Sources */,
+				6D3926B0292E6B60006EB66D /* JokeController.swift in Sources */,
 				6D39269A292E6511006EB66D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
